@@ -1,0 +1,14 @@
+body
+{ display: flex;
+ justify-content: center;
+ align-items: center;
+background-image: url(DviewLogo.png);
+background-size: cover;
+background-repeat: no-repeat;
+margin: 25px;
+padding: 50px;
+}
+form
+{
+    color: cornsilk;
+}

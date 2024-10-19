@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            function formvalidate()
+            {
+             var fname= document.f1.fname.value;
+             var pass= document.f1.pass.value;
+             if(fname==null||fname=="")
+             {
+                alert("You must fill in the first name");
+                return false;
+             }
+             if(pass.lenghth<3)
+             {
+                alert("The passsword should be more than 3 charachters");
+                return false;
+             }
+            }
+             
+            
+            function showvisibility()
+            {
+                var passsword = document.getElementById("pass");
+                var checkbox = document.getElementById("show");
+
+            if (checkbox.checked) 
+            {
+                pass.type="text";
+            }
+            else
+            {
+                pass.type="Password";
+            }
+            }
+        </script>
+    </head>
+        <body>
+            <caption>
+                DvieW
+            </caption>
+        <form name="f1" action="mypage.php" onsubmit="return formvalidate()">
+            <label for="fname"> First Name:</label>
+<input type="text" id="fname" name="fname"><br>
+<br><label for="Lname"> Last Name:</label>
+<input type="text" id="Lname" name="Last Name" required><br>
+<br><label for="Age"> Age:</label>
+<input type="number" id="age" namne="Age"><br>
+<br><label for="username"> Username:</label>
+<input type="name" id="username" name="Username"><br>
+<br><label for="Password"> Password:</label>
+<input type="password" id="pass" placeholder="Enter Password"><br><br>
+<input type="checkbox" id="show" onclick="showvisibility()">Show/Hide passsword<br>
+<br><input type="submit" value="Create your account">
+        </form>
+   
+        
+    </body>
+</html>
